@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teste em Js</title>
+</head>
+
+<body>
+   <script>
+  var capturando = "";
+function capturar () {
+    capturando = document.getElementById('valor').value;
+    document.getElementById('valorDigitado').innerHTML = capturando;
+    mostra("Olá " +capturando+".Tudo bem ? ")
+}
+function mostra (frase) {
+      document.write(frase);
+      document.write("<br>");
+      }
+    
+		
+   </script>
+    
+    <input type="text" id=valor>
+    <input type="submit" onclick="capturar()" value="escreva algo">
+    <p id="valorDigitado"></p>
+         
+		</body>		
+	
+</html>
+</body>
+</html>
