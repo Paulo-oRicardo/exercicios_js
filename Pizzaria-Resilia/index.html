@@ -5,26 +5,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Pizzaria</title>
 </head>
+<style>
+   h1{
+      text-align: center;
+   }
+</style>
 <body>
-      <script>
-
-         var valorProducao = prompt("Insira o custo de produção da pizza: ");
-         var valorVenda = prompt("Insira o valor de venda da pizza: ");
-         var nomePizza = prompt("O nome da pizza: ");
-
-         function calcularImposto (venda){
-            return venda*0.089;
-         }
-         
-
-         function lucroLiquido(valor,custo,valorImposto){
-
-            return   (valor - (custo - valorImposto))*-1;
-         }
-         var imposto = calcularImposto(valorVenda);
-         var lucro = lucroLiquido(valorProducao,valorVenda,imposto);
-         document.write("Para a pizza " +nomePizza+ " o lucro líquido é de R$ " + lucro.toFixed(2) + " e o imposto é de " + imposto.toFixed(2));
-
-      </script>
+   <h1>Pizzaria Resilia</h1>
+   <script src="pizza.js"></script>
 </body>
 </html>
