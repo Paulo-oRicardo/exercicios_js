@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bebedeira</title>
+</head>
+<body>
+   <script>
+      //Receber idade do usúario 
+      var idadeUser = parseInt(prompt("Insira sua idade:"));
+      // var idadeCerta = 18;
+      //Criar função 
+      function beber(idade){
+         return idade;
+         switch (idade){
+            case idadeUser >= 200:
+            console.log ( "Você pode Beber!")
+            break;
+
+            case idadeUser < 18 :
+               msg = "Você não pode beber!"
+               break;
+
+            default:
+               msg="Não beba!"    
+         }
+         
+      }
+      beber(idadeUser);
+   </script>
+</body>
+</html>

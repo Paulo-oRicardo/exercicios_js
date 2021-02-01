@@ -13,4 +13,4 @@
       }
       var imposto = calcularImposto(valorVenda);
       var lucro = lucroLiquido(valorProducao,valorVenda,imposto);
-      document.write("Para a pizza " +nomePizza+ " o lucro líquido é de R$ " + lucro.toFixed(2) + " e o imposto é de: R$: " + imposto.toFixed(2));
+      document.write("Para a pizza " +nomePizza+ " o lucro\nlíquido é de R$ " + lucro.toFixed(2) + " e o imposto é de: R$: " + imposto.toFixed(2));

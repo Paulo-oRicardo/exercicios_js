@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Semaforo</title>
+</head>
+<body>
+      <script>
+         var semaforo = prompt("Como o farol está ? ");
+         //Função recebe parametros 
+         function passar (verde,amarelo,vermelho){
+            switch (semaforo){
+               case "verde":
+                  console.log("Pode passar!");
+                  break;
+
+               case "amarelo":
+                  console.log("Melhor Freiar");
+                  break;
+
+               case "vermelho":
+                  console.log("Pare já");
+                  break;
+               
+               default:
+                  console.log("Farou esta quebrado")
+            }
+         }
+       passar(semaforo);
+      </script>
+</body>
+</html>
